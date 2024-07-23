@@ -4,7 +4,7 @@ import Header from '../Header/Header'
 
 function GeneralContainer() {
   return (
-    <Flex as='section' bg='red' w='100%' maxW='1210px' p='50px 106px 0 106px' fontFamily='rubik.general'>
+    <Flex as='section' w='100%' maxW='1210px' p='50px 106px 0 106px' fontFamily='rubik.general'>
         <Header/>
     </Flex>
   )
