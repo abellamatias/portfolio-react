@@ -17,7 +17,7 @@ const theme = extendTheme({
   styles: {
     global:{
       body: {
-        bg: "f8f8f8",
+        bg: "#f8f8f8",
         display: 'flex',
         justifyContent: 'center',
         w:'100%'
