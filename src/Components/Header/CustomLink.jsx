@@ -3,6 +3,7 @@ import React from 'react'
 
 const CustomLink = (props) => (
     <Link
+      to={props}
       padding='6px'
       textShadow='0 0 5px #f8f8f8'
       textDecor='none'

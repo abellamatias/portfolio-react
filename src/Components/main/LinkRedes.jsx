@@ -5,7 +5,7 @@ const LinkRedes = ({referencia, icono}) => {
   return (
     <Link 
     target='_blank'
-    href={referencia}
+    to={referencia}
     >
       <Image mr='30px' src={icono} alt=""/>
     </Link>

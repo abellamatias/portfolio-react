@@ -13,11 +13,11 @@ const Header = () => {
                 <Image src="/logo.png" alt="Logo" width={50} height={50} />
             </Box>
             <Flex as='section' fontSize={16} gap='15px'>
-                            <CustomLink href="#" >Home</CustomLink>
-                            <CustomLink href="#servicios" >Servicios</CustomLink>
-                            <CustomLink href="#habilidades" >Habilidades</CustomLink>
-                            <CustomLink href="#estudios" >Estudios</CustomLink>
-                            <CustomLink href="#contacto" >Contacto</CustomLink>
+                            <CustomLink to="#" >Home</CustomLink>
+                            <CustomLink to="#servicios" >Servicios</CustomLink>
+                            <CustomLink to="#habilidades" >Habilidades</CustomLink>
+                            <CustomLink to="#estudios" >Estudios</CustomLink>
+                            <CustomLink to="#contacto" >Contacto</CustomLink>
             </Flex>
         </Flex>
     </Flex>
