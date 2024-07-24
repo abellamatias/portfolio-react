@@ -20,7 +20,8 @@ const theme = extendTheme({
         bg: "#f8f8f8",
         display: 'flex',
         justifyContent: 'center',
-        w:'100%'
+        w:'100%',
+        color:'#212121'
       }
     }
   }

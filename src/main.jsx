@@ -1,7 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ChakraProvider } from '@chakra-ui/react'
-import Header from './Components/Header/Header'
 import theme from './resources/theme/theme'
 import GeneralContainer from './Components/container/GeneralContainer'
 
