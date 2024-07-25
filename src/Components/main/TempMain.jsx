@@ -3,6 +3,7 @@ import React from 'react'
 import Hero from './hero/Hero'
 import Servicios from './servicios/Servicios'
 import Habilidades from './habilidades/Habilidades'
+import Estudios from './estudios/Estudios'
 
 function TempMain() {
   return (
@@ -10,6 +11,7 @@ function TempMain() {
         <Hero/>
         <Servicios/>
         <Habilidades/>
+        <Estudios/>
     </Box>
   )
 }

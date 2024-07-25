@@ -31,7 +31,7 @@ function Habilidades() {
 
   return (
                 <Box as='section' w='80%'>
-                    <Heading as='h2' size='xl'>Habilidades</Heading>
+                    <Heading as='h2' size='xl' mt='0' mb='65px' pt='205px' fontSize='37px'>Habilidades</Heading>
 
                     <Grid templateColumns='repeat(3, 1fr)' gap='13%'>
 
