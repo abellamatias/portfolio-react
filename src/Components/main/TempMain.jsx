@@ -4,6 +4,7 @@ import Hero from './hero/Hero'
 import Servicios from './servicios/Servicios'
 import Habilidades from './habilidades/Habilidades'
 import Estudios from './estudios/Estudios'
+import Contacto from './contacto/Contacto'
 
 function TempMain() {
   return (
@@ -12,6 +13,7 @@ function TempMain() {
         <Servicios/>
         <Habilidades/>
         <Estudios/>
+        <Contacto/>
     </Box>
   )
 }

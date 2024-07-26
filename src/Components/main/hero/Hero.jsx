@@ -32,7 +32,7 @@ function Hero() {
                 <Flex as='section' justify='space-between' align='center' w='100%' m='222px 0 0 0' >
                     <Flex as='section' wrap='nowrap'>
                         {/* <!-- Lista redes --> */}
-                    {redes.map((red, index) => <LinkRedes referencia={red.link} icono={red.icono} key={index}></LinkRedes>)}
+                    {redes.map((red, index) => <LinkRedes referencia={red.link} icono={red.icono} gap='30px' key={index}></LinkRedes>)}
                     </Flex>
                     <Text fontSize='15px'>matiasabella2000@gmail.com</Text>
                 </Flex>
