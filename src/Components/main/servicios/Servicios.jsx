@@ -21,7 +21,7 @@ function Servicios() {
   return (
     // <!-- Servicios -->
             <Box as='section'>
-                <Heading as='h2' size='xl' pt='170px' mt='0' mb='65px' fontSize='37px'>¿Qué hago?</Heading>
+                <Heading as='h2' size='xl' pt='170px' mt='0' mb='65px' fontSize='37px' fontFamily='rubik.general'>¿Qué hago?</Heading>
                 <Flex as='section' gap='5%'>
                     {/* <!-- Cards --> */}
                     {services.map((service, index) =>(

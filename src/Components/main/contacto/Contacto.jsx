@@ -1,6 +1,7 @@
 import { Flex, Heading, Text, Box } from '@chakra-ui/react'
 import React from 'react'
 import LinkRedes from '../LinkRedes'
+import Formulario from './Formulario'
 
 function Contacto() {
     let redes = [
@@ -37,15 +38,7 @@ function Contacto() {
                     </Box>  
                     </Flex>
                 </Flex>
-                <Flex as='section' class="formulario">
-                    {/* <form action="">
-                        <input class="input" type="text" name="nombre" id="nombre" placeholder="Tu nombre">
-                        <input class="input" type="email" placeholder="Tu dirección de email" name="email" id="email" autocomplete="off">
-                        <input class="input" type="text" placeholder="Tu presupuesto (opcional)" name="presupuesto" id="presupuesto">
-                        <textarea class="input" placeholder="Descripción de tu proyecto" rows="4" name="comentarios" id="comentarios"></textarea>
-                        <section class="contenedor-boton"><button type="submit" value="Enviar">ENVIAR</button></section>
-                    </form> */}
-                </Flex>
+                <Formulario/>
             </Flex> 
   )
 }
