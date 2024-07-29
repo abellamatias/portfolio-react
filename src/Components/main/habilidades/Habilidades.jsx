@@ -35,7 +35,7 @@ function Habilidades() {
 
                     <Grid templateColumns='repeat(3, 1fr)' gap='13%'>
 
-                        {habilidades.map((habilidad, index) => <GridItem key={index} w='100%'><Habilidad image={habilidad.image} name={habilidad.name}/></GridItem>)}
+                        {habilidades.map((habilidad, index) => <GridItem key={index}><Habilidad image={habilidad.image} name={habilidad.name} index={index}/></GridItem>)}
                     
                     </Grid>
                 </Box>
