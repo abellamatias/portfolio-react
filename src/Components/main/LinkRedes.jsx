@@ -6,8 +6,7 @@ const LinkRedes = ({referencia, icono, gap}) => {
     <Link 
     target='_blank'
     to={referencia}
-    >
-      <Image mr={gap} src={icono} alt="" w='18px' h='18px'/>
+    ><Image mr={gap} src={icono} alt="" w='18px' h='18px'/>
     </Link>
   )
 }
