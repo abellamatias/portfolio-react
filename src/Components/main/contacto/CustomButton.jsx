@@ -6,9 +6,12 @@ function CustomButton() {
     <Flex 
     w='80%'
     justify='right'
+    m='0 auto'
     ><Button
     border='none'
+    height='auto'
     mt='14px'
+    lineHeight={1.15}
     borderRadius='1px'
     bg='brand.white'
     p='8px 17px'
