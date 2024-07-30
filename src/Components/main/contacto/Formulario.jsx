@@ -1,11 +1,12 @@
 import { Flex, FormControl, FormErrorMessage} from '@chakra-ui/react'
-import React from 'react'
+import React, { useRef } from 'react'
 import CustomInput from './CustomInput'
 import CustomTextarea from './CustomTextarea'
 import CustomButton from './CustomButton'
 import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import CustomError from './CustomError'
+import emailjs from '@emailjs/browser';
 
 const initialValues={
     nombre:'',
@@ -15,26 +16,45 @@ const initialValues={
 }
 
 const validationSchema = Yup.object({
-  nombre: Yup.string().max(15, 'No puede superar los 15 caracteres').required('Campo obligatorio'),
+  nombre: Yup.string().max(50, 'No puede superar los 50 caracteres').required('Campo obligatorio'),
   email: Yup.string().email('Correo no válido').required('Campo obligatorio'),
   descripcion: Yup.string().required('Campo obligatorio')
 })
 
 function Formulario() {
 
+  const form = useRef();
+
   const formik = useFormik({
     initialValues,
     validationSchema,
     onSubmit: (values) => {
-      
-      console.log(values);
+      console.log(values)
+      sendEmail()
     },
 })
+
+
+const sendEmail = () => {
+
+  emailjs
+    .sendForm('service_64fgc5m', 'template_zn2xtkf', form.current, {
+      publicKey: '39wjRQBmnyxgOZUqZ',
+    })
+    .then(
+      () => {
+        console.log('SUCCESS!');
+      },
+      (error) => {
+        console.log('FAILED...', error.text);
+      },
+    );
+};
 
   return (
     <Flex as='section' bg='brand.black' flexBasis='50%' flexDir='column' justify='center' align='center' minH='338px'>
                     <FormControl as='section' w='100%' display='flex' flexDir='column' justify='center' align='center'>
-                      <form onSubmit={formik.handleSubmit}>
+                      <form ref={form} onSubmit={formik.handleSubmit}>
 
                       <FormControl as='nav' isInvalid={!!formik.errors.nombre}
                       _invalid={{ borderColor:'transparent' }}
