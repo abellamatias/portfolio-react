@@ -1,5 +1,5 @@
 import { Flex, FormControl, FormErrorMessage} from '@chakra-ui/react'
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import CustomInput from './CustomInput'
 import CustomTextarea from './CustomTextarea'
 import CustomButton from './CustomButton'
@@ -7,6 +7,7 @@ import { useFormik } from 'formik'
 import * as Yup from 'yup'
 import CustomError from './CustomError'
 import emailjs from '@emailjs/browser';
+import Success from './Success'
 
 const initialValues={
     nombre:'',
@@ -24,6 +25,7 @@ const validationSchema = Yup.object({
 function Formulario() {
 
   const form = useRef();
+  const [isSuccess, setIsSuccess] = useState(false);
 
   const formik = useFormik({
     initialValues,
@@ -42,8 +44,11 @@ const sendEmail = () => {
       publicKey: '39wjRQBmnyxgOZUqZ',
     })
     .then(
-      () => {
+      () => {        
         console.log('SUCCESS!');
+        setIsSuccess(true);
+        formik.resetForm();
+        //setIsSuccess(false);
       },
       (error) => {
         console.log('FAILED...', error.text);
@@ -101,6 +106,7 @@ const sendEmail = () => {
                         </FormControl>
                         
                         <CustomButton/>
+                        {isSuccess&&<Success/>}
                         </form>
                     </FormControl> 
                 </Flex>
