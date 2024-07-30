@@ -71,7 +71,7 @@ function Formulario() {
                         <FormControl isInvalid={!!formik.errors.descripcion}
                         _invalid={{ borderColor: 'transparent' }}>
                         <CustomTextarea 
-                        id="descripcion" 
+                        idName="descripcion" 
                         placeholderText="Descripción de tu proyecto" 
                         rowsCant="4" 
                         handle={formik.handleChange}
