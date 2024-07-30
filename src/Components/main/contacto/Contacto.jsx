@@ -20,7 +20,7 @@ function Contacto() {
     ]
   return (
     // <!-- Contacto -->
-            <Flex as='section' pt='205px' justify='space-between'>
+            <Flex as='section' id='contacto' pt='205px' justify='space-between'>
                 <Flex as='section' flexBasis='40%' flexDir='column' justify='space-around'>
                     <Heading as='h2' fontSize='37px' pt='0' m='0' fontFamily='rubik.general' fontWeight='bold' lineHeight={1.15}>Dí hola.</Heading>
                     <Heading as='h3' fontSize='23px' fontFamily='rubik.general' fontWeight='normal' m='0'>Siempre estoy disponible para discutir tus proyectos y hablar sobre nuevas cosas</Heading>

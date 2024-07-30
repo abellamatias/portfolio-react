@@ -30,7 +30,7 @@ function Habilidades() {
 
 
   return (
-                <Box as='section' w='80%'>
+                <Box as='section' id='habilidades' w='80%'>
                     <Heading as='h2' size='xl' mt='0' mb='75px' pt='220px' fontSize='37px' fontFamily='rubik.general'>Habilidades</Heading>
 
                     <Grid templateColumns='repeat(3, 1fr)' gap='13%' rowGap='50px'>

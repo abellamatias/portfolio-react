@@ -17,7 +17,7 @@ function CustomButton() {
     p='8px 17px'
     fontSize='10px'
     fontWeight='lighter'
-    transition='2s'
+    transition='0.2s'
     _hover={{boxShadow:'0 0 10px rgba(248, 248, 248, 0.7)',
         cursor:'pointer'}}
     type="submit" 

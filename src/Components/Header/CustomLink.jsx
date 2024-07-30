@@ -1,17 +1,16 @@
-import { Link } from '@chakra-ui/react'
+import { Link } from 'react-scroll';
 import React from 'react'
+import './CustomLink.css';
 
-const CustomLink = (props) => (
+const CustomLink = ({to, children}) => (
     <Link
-      to={props}
-      padding='6px'
-      textShadow='0 0 5px #f8f8f8'
-      textDecor='none'
-      transition='0.2s'
-      display='inline-block'
-      _hover={{ transform: 'scale(1.1)' }}
-      {...props}
-    />
+      className='customLink'
+      smooth={true}
+      duration={500}
+      to={to}
+    >
+      {children}
+    </Link>
   );
 
 export default CustomLink

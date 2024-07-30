@@ -20,7 +20,7 @@ function Hero() {
     ]
 
   return (
-    <Flex as='section' w='100%' flexDir='column'>
+    <Flex as='section' id='home' w='100%' flexDir='column'>
                 <Flex as='section' w='100%' mt='130px' justify='space-between' align='center'>
                     <Flex as='section' direction='column' justify='center' basis='68%'>
                         <Text fontSize='51px' m='0 0 10px 0'>Soy <Text as='span' fontWeight='600'>Matias Ruben Abella</Text></Text>
