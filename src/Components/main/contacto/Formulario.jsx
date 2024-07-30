@@ -10,11 +10,12 @@ import CustomError from './CustomError'
 const initialValues={
     nombre:'',
     email:'',
+    presupuesto:'',
     descripcion:'',
 }
 
 const validationSchema = Yup.object({
-  nombre: Yup.string().max(15, "No puede superar los 15 caracteres").required('Campo obligatorio'),
+  nombre: Yup.string().max(15, 'No puede superar los 15 caracteres').required('Campo obligatorio'),
   email: Yup.string().email('Correo no válido').required('Campo obligatorio'),
   descripcion: Yup.string().required('Campo obligatorio')
 })
@@ -24,8 +25,8 @@ function Formulario() {
   const formik = useFormik({
     initialValues,
     validationSchema,
-    onSubmit: values => {
-      // tu lógica de envío aquí
+    onSubmit: (values) => {
+      
       console.log(values);
     },
 })
@@ -38,22 +39,44 @@ function Formulario() {
                       <FormControl as='nav' isInvalid={!!formik.errors.nombre}
                       _invalid={{ borderColor:'transparent' }}
                       >
-                        <CustomInput typeName="text" idName="nombre" placeholderText="Tu nombre"
-                        handle={formik.handleChange}/>
+                        <CustomInput 
+                        typeName="text" 
+                        idName="nombre" 
+                        placeholderText="Tu nombre"
+                        handle={formik.handleChange}
+                        value={formik.values.nombre}
+                        />
                         <CustomError>{formik.errors?.nombre}</CustomError>
                         </FormControl>
 
-                        <FormControl isInvalid={!!formik.errors.email}
-                        _invalid={{ borderColor: 'transparent' }}>
-                        <CustomInput typeName="email" idName="email" placeholderText="Tu dirección de email" handle={formik.handleChange}/>
+                        <FormControl isInvalid={!!formik.errors.email} _invalid={{ borderColor: 'transparent' }}>
+                        <CustomInput 
+                        typeName="email" 
+                        idName="email"
+                        placeholderText="Tu dirección de email" 
+                        handle={formik.handleChange}
+                        value={formik.values.email}
+                        />
                         <CustomError>{formik.errors?.email}</CustomError>
                         </FormControl>
 
-                        <CustomInput typeName="text" idName="presupuesto" placeholderText="Tu presupuesto (opcional)"/>
+                        <CustomInput 
+                        typeName="text" 
+                        idName="presupuesto" 
+                        placeholderText="Tu presupuesto (opcional)"
+                        handle={formik.handleChange}
+                        value={formik.values.presupuesto}
+                        />
 
                         <FormControl isInvalid={!!formik.errors.descripcion}
                         _invalid={{ borderColor: 'transparent' }}>
-                        <CustomTextarea id="descripcion" placeholderText="Descripción de tu proyecto" rowsCant="4" handle={formik.handleChange}/>
+                        <CustomTextarea 
+                        id="descripcion" 
+                        placeholderText="Descripción de tu proyecto" 
+                        rowsCant="4" 
+                        handle={formik.handleChange}
+                        value={formik.values.descripcion}
+                        />
                         <CustomError>{formik.errors?.descripcion}</CustomError>
                         </FormControl>
                         

@@ -1,7 +1,7 @@
 import { border, Input } from '@chakra-ui/react'
 import React from 'react'
 
-const CustomInput = ({typeName, idName, placeholderText, handle}) => {
+const CustomInput = ({typeName, idName, placeholderText, handle, value}) => {
   return (
     <Input 
             type={typeName} 
@@ -31,6 +31,7 @@ const CustomInput = ({typeName, idName, placeholderText, handle}) => {
 
             }}
             onChange={handle}
+            value={value}
             />
   )
 }
