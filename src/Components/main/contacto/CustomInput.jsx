@@ -1,7 +1,7 @@
 import { border, Input } from '@chakra-ui/react'
 import React from 'react'
 
-const CustomInput = ({typeName, idName, placeholderText}) => {
+const CustomInput = ({typeName, idName, placeholderText, handle}) => {
   return (
     <Input 
             type={typeName} 
@@ -18,7 +18,6 @@ const CustomInput = ({typeName, idName, placeholderText}) => {
             color='brand.white'
             fontSize='12px'
             outline='none'
-            autoComplete="off"
             _focus = {{ borderColor: 'brand.white', boxShadow:'none' }}
             _placeholder={{ color: 'brand.white', opacity: 0.8, fontWeight: 'lighter'}}
             sx={{
@@ -28,7 +27,10 @@ const CustomInput = ({typeName, idName, placeholderText}) => {
                 transition: 'background-color 5000s ease-in-out 0s'
               }
             }}
-            
+            _invalid={{ borderColor: 'transparent', borderBottom: '1px solid rgba(248, 248, 248, 0.7)',
+
+            }}
+            onChange={handle}
             />
   )
 }

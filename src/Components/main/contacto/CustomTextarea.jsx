@@ -1,7 +1,7 @@
 import { Textarea } from '@chakra-ui/react'
 import React from 'react'
 
-const CustomTextarea = ({idName, placeholderText, rowsCant}) => {
+const CustomTextarea = ({idName, placeholderText, rowsCant, handle}) => {
   return (
     
 
@@ -20,12 +20,13 @@ const CustomTextarea = ({idName, placeholderText, rowsCant}) => {
             color='brand.white'
             fontSize='12px'
             outline='none'
-            autoComplete="off"
             resize='none'
+            
             _focus = {{ borderColor: 'brand.white', boxShadow:'none' }}
             _placeholder={{ color: 'brand.white', opacity: 0.8, fontWeight: 'lighter', padding:'0' }}
             
-            
+            onChange={handle}
+            _invalid={{ borderColor: 'transparent', borderBottom: '1px solid rgba(248, 248, 248, 0.7)',}}
             />
 
 
