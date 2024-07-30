@@ -5,7 +5,7 @@ import CustomLink from './CustomLink'
 const Header = () => {
   return (
     
-    <Flex as='section' pos='fixed' p='10px' top='0' w='100%' maxW='1230px' justify='space-between' left='50%' transform='translateX(-50%)' backdropFilter='blur(5px)' bg='rgba(248, 248, 248, 0.8)'>
+    <Flex as='section' pos='fixed'  top='0' w='100%' maxW='1422px' p='10px 106px 0 106px'  justify='space-between' left='50%' transform='translateX(-50%)' backdropFilter='blur(5px)' bg='rgba(248, 248, 248, 0.8)' zIndex={100}>
         
         <Flex as='nav' w='100%' justify='space-between' align='center'>
 

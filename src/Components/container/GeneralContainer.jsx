@@ -7,7 +7,12 @@ import Main from '../main/TempMain'
 
 function GeneralContainer() {
   return (
-    <Flex as='section' w='100%' minW={[320, 480, 768, 1024, 1422]} maxW='1422px' p='50px 106px 0 106px' fontFamily='rubik.general' flexDirection='column'>
+    <Flex as='section' 
+          w='100%'  
+          maxW='1422px' 
+          p={{ base: '50px 20px 0 20px', sm:'50px 10px 0 10px', md:'50px 80px 0 80px',lg:'50px 80px 0 80px' ,xl: '50px 106px 0 106px' }}
+          fontFamily='rubik.general' 
+          flexDirection='column'>
         <Header/>
         <Main/>
         <Footer/>

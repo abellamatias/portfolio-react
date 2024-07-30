@@ -22,7 +22,7 @@ function Servicios() {
     // <!-- Servicios -->
             <Box as='section' id='servicios'>
                 <Heading as='h2' size='xl' pt='170px' mt='0' mb='65px' fontSize='37px' fontFamily='rubik.general'>¿Qué hago?</Heading>
-                <Flex as='section' gap='5%'>
+                <Flex as='section' gap={{base:'65px', lg:'5%'}} flexDir={{base:'column', lg:'row'}}>
                     {/* <!-- Cards --> */}
                     {services.map((service, index) =>(
                         <CustomCard key={index} image={service.image} title={service.title} content={service.content} />

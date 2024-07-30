@@ -10,14 +10,14 @@ const LinkRedes = ({referencia, icono, gap}) => {
     target='_blank'
     href={referencia}
     mr={gap}
-    w='18px' 
-    h='18px' 
+    w={{base:'25px', lg:'18px'}} 
+    h={{base:'25px',lg:'18px'}} 
     >
       <MotionImage 
         src={icono}
         alt="" 
-        width='18px' 
-        height='18px' 
+        w={{base:'25px', lg:'18px'}} 
+        h={{base:'25px',lg:'18px'}} 
         whileHover={{ scale: 1.1 }}
       />
     </Link>
