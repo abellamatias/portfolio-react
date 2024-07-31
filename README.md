@@ -68,10 +68,16 @@ Esto debería abrir tu proyecto en el navegador
 
 ## Galería
 
-![Foto1](https://github.com/user-attachments/assets/b06ef58c-5131-4945-afd9-4841d59273ac)
-![Foto2](https://github.com/user-attachments/assets/8ba0d8f4-36ca-4eef-86e5-fc786bb12408)
-![Foto3](https://github.com/user-attachments/assets/e8438512-eacd-408b-b68c-817c6dca2b46)
-![Foto4](https://github.com/user-attachments/assets/4be89f28-f6ad-47fe-ac1b-0c23e22e52b2)
+![Foto1](https://github.com/user-attachments/assets/e3c8bdcb-f8a0-476a-94b4-d3c536ee3e51)
+![Foto2](https://github.com/user-attachments/assets/bea39cd3-3a22-468a-9cd3-831220ad52ac)
+![Foto3](https://github.com/user-attachments/assets/828dcf81-2b68-4685-bebf-b1491ae1a9be)
+![Foto4](https://github.com/user-attachments/assets/6ce4703b-60b3-48c1-a5b1-02d8258fdb80)
+
+
+
+
+
+
 
 
 
