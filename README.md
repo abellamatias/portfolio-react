@@ -43,9 +43,11 @@ Herramientas utilizadas:
 Instalación:
 
 Clona el repositorio en tu máquina local:
+
 git clone https://github.com/abellamatias/portfolio-react.git
 
 Navega al directorio del proyecto:
+
 cd portfolio-react
 
 Uso:
@@ -53,9 +55,11 @@ Uso:
 Para iniciar el proyecto, asegúrate de tener Node.js y npm instalados. Luego, sigue estos pasos:
 
 Instala las dependencias:
+
 npm install
 
 Inicia el servidor de desarrollo:
+
 npm run dev
 
 Esto debería abrir tu proyecto en el navegador
