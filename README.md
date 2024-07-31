@@ -1,16 +1,18 @@
+# Portfolio React + Vite
+
 Este es el repositorio de mi primer portfolio personal hecho en React. Acá vas a encontrar el código fuente y los recursos utilizados para crear mi sitio web de portfolio. En este caso utilicé react + vite y otros frameworks como Chakra UI, react-scroll.
 
 Además integré la funcionalidad del contacto, haciendo que se envíe un correo a mi mail al presionar enviar.
 
-Podés ver el diseño del portfolio en el siguiente link:
+## Podés ver el diseño del portfolio en el siguiente link:
 
 https://www.behance.net/gallery/102515935/Personal-Website
 
-Podés ver mi portfolio ingresando al siguiente link:
+## Podés ver mi portfolio ingresando al siguiente link:
 
 https://portfolio-react-three-mocha.vercel.app/
 
-Características:
+## Características:
 
 -Diseño minimalista, moderno y agradable
 
@@ -18,7 +20,7 @@ Características:
 
 -Responsive
 
-Herramientas utilizadas:
+## Herramientas utilizadas:
 
 -React
 
@@ -40,25 +42,25 @@ Herramientas utilizadas:
 
 -Vercel
 
-Instalación:
+## Instalación:
 
-Clona el repositorio en tu máquina local:
+### Clona el repositorio en tu máquina local:
 
 git clone https://github.com/abellamatias/portfolio-react.git
 
-Navega al directorio del proyecto:
+### Navega al directorio del proyecto:
 
 cd portfolio-react
 
-Uso:
+## Uso:
 
 Para iniciar el proyecto, asegúrate de tener Node.js y npm instalados. Luego, sigue estos pasos:
 
-Instala las dependencias:
+### Instala las dependencias:
 
 npm install
 
-Inicia el servidor de desarrollo:
+### Inicia el servidor de desarrollo:
 
 npm run dev
 
