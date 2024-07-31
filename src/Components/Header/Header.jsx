@@ -12,7 +12,7 @@ const Header = () => {
     top='0' 
     w='100%' 
     maxW='1422px' 
-    p={{ base: '10px 0px 0 0px', sm:'50px 10px 0 10px', md:'50px 80px 0 80px',lg:'50px 80px 0 80px' ,xl: '50px 106px 0 106px' }}  
+    p={{ base: '10px 0px 10px 0px', sm:'10px 10px 10px 10px', md:'10px 80px 10px 80px',lg:'10px 80px 10px 80px' ,xl: '10px 106px 10px 106px' }}  
     justify='space-between' 
     left='50%' 
     transform='translateX(-50%)' 
