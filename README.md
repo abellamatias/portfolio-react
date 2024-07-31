@@ -65,3 +65,12 @@ npm install
 npm run dev
 
 Esto debería abrir tu proyecto en el navegador
+
+## Galería
+
+![image](https://github.com/user-attachments/assets/4ec86231-f9d2-4eee-b97a-f6d732480625)
+![image](https://github.com/user-attachments/assets/66d65feb-932c-46bf-a5fa-8ce298279401)
+![image](https://github.com/user-attachments/assets/fbd5f2fa-12f0-428f-a44e-bfc4dbbb836f)
+
+
+
