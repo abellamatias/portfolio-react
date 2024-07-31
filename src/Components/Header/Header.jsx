@@ -6,7 +6,19 @@ import HamburguerMenu from './HamburguerMenu'
 const Header = () => {
   return (
     
-    <Flex as='section' pos='fixed'  top='0' w='100%' maxW='1422px' p={{ base: '50px 20px 0 20px', sm:'50px 10px 0 10px', md:'50px 80px 0 80px',lg:'50px 80px 0 80px' ,xl: '50px 106px 0 106px' }}  justify='space-between' left='50%' transform='translateX(-50%)' backdropFilter='blur(5px)' bg='rgba(248, 248, 248, 0.8)' zIndex={100}>
+    <Flex 
+    as='section' 
+    pos='fixed'  
+    top='0' 
+    w='100%' 
+    maxW='1422px' 
+    p={{ base: '10px 0px 0 0px', sm:'50px 10px 0 10px', md:'50px 80px 0 80px',lg:'50px 80px 0 80px' ,xl: '50px 106px 0 106px' }}  
+    justify='space-between' 
+    left='50%' 
+    transform='translateX(-50%)' 
+    backdropFilter='blur(5px)' 
+    bg='rgba(248, 248, 248, 0.8)' 
+    zIndex={100}>
         
         <Flex as='nav' w='100%' justify='space-between' align='center'>
 

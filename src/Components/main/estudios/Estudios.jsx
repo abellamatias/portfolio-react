@@ -17,7 +17,7 @@ function Estudios() {
 
   return (
     // <!-- Estudios -->
-                <Box as='section' id='estudios' w={{base:'100%', lg:'85%'}} >
+                <Box as='section' id='estudios' w={{base:'100%', lg:'85%'}}>
                 <Heading as='h2' size='xl' mt='0' mb='65px' pt='205px' fontSize='37px' fontFamily='rubik.general'>Estudios</Heading>
                 {estudios.map((estudio, index) => (
                     <React.Fragment key={index}>

@@ -19,7 +19,7 @@ function HamburguerMenu() {
         icon={<HamburgerIcon />}
         variant='outline'
     />
-    <MenuList w='75vw' h='75vh' display='flex' flexDir='column'>
+    <MenuList w={{base:'85vw', sm:'75vw'}} h='75vh' display='flex' flexDir='column'>
         
             <MenuItem flexBasis='20%' onClick={() => handleClick('home')}>
             Home

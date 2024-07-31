@@ -33,7 +33,7 @@ function Habilidades() {
                 <Box as='section' id='habilidades' w={{base:'100%', lg:'85%'}}>
                     <Heading as='h2' size='xl' mt='0' mb='75px' pt='220px' fontSize='37px' fontFamily='rubik.general'>Habilidades</Heading>
 
-                    <Grid templateColumns='repeat(3, 1fr)' gap='13%' rowGap='50px'>
+                    <Grid templateColumns={{base:'repeat(2, 1fr)', md:'repeat(3, 1fr)'}} gap={{base:'0', sm:'13%'}} rowGap='50px'>
 
                         {habilidades.map((habilidad, index) => <GridItem key={index}><Habilidad image={habilidad.image} name={habilidad.name} index={index}/></GridItem>)}
                     

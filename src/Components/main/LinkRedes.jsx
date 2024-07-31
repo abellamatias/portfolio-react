@@ -10,6 +10,7 @@ const LinkRedes = ({referencia, icono, gap}) => {
     target='_blank'
     href={referencia}
     mr={gap}
+    ml={gap}
     w={{base:'25px', lg:'18px'}} 
     h={{base:'25px',lg:'18px'}} 
     >
